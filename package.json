@@ -42,5 +42,8 @@
     "ts-jest": "^26.4.4",
     "typescript": "^4.1.2",
     "write-good": "^1.0.3"
+  },
+  "dependencies": {
+    "object-path": "^0.11.4"
   }
 }

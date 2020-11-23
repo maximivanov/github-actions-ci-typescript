@@ -1,0 +1,46 @@
+{
+  "name": "github-actions-ci-typescript",
+  "version": "1.0.0",
+  "description": "Github Actions workflow to run code quality checks in TypeScript projects",
+  "main": "index.js",
+  "scripts": {
+    "lint:eslint": "eslint \"**/*.{ts,tsx,js,jsx,}\" --max-warnings=0",
+    "lint:tsc": "tsc --noemit",
+    "lint:markdown": "markdownlint *.md",
+    "lint": "run-p lint:*",
+    "audit-security": "audit-ci --config ./audit-ci.json",
+    "test": "jest --verbose",
+    "check-copy:cspell": "cspell --config=.cspell.json **/*.md",
+    "check-copy:language": "write-good *.md --no-passive",
+    "check-copy": "run-p check-copy:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximivanov/github-actions-ci-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maximivanov/github-actions-ci-typescript/issues"
+  },
+  "homepage": "https://github.com/maximivanov/github-actions-ci-typescript#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "@types/node": "^14.14.9",
+    "@typescript-eslint/eslint-plugin": "^4.8.2",
+    "@typescript-eslint/parser": "^4.8.2",
+    "audit-ci": "^3.1.1",
+    "cspell": "^4.2.2",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.6.3",
+    "markdownlint-cli": "^0.25.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.2.0",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.1.2",
+    "write-good": "^1.0.3"
+  }
+}

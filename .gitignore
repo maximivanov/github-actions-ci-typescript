@@ -1,0 +1,14 @@
+node_modules/*
+
+.DS_Store
+
+# Test coverage output
+.nyc_output/
+coverage/
+
+# IDE configuration
+.idea/
+.vscode/
+
+# TS compiled
+dist/

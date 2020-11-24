@@ -7,3 +7,5 @@ in under 5 minutes][link]
 Check the Pull Requests page for examples of pull requests failing on different checks.
 
 [link]: https://www.maxivanov.io/unit-testing-azure-function-with-jest-typescript/
+
+This is too long line This is too long line This is too long line This is too long line This is too long line This is too long line
